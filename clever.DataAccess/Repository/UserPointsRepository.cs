@@ -49,10 +49,14 @@ public class UserPointsRepository : IUserPointsRepository
         return true;
     }
 
-    public (UserPoints, UserPoints, UserPoints) GetTopUsersPoints ()
+    public (UserPoints, UserPoints, UserPoints) GetTopUsersPoints()
     {
-        var allUsers = _context.DbPoints.OrderBy(u => u.Points).ToList();
+        var allUsers = _context.DbPoints.OrderByDescending (u => u.Points).ToList();
         var topUsers = (allUsers[0], allUsers[1], allUsers[2]);
+        Console.WriteLine(allUsers[0].TgId + " " + allUsers[0].Points);
+        Console.WriteLine(allUsers[1].TgId + " " + allUsers[1].Points);
+        Console.WriteLine(allUsers[2].TgId + " " + allUsers[2].Points);
+        Console.WriteLine("end of repo GetTopUsersPoints logs");
         return topUsers;
     }
 
