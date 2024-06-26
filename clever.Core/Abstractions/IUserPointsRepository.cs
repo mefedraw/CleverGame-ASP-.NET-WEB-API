@@ -9,4 +9,5 @@ public interface IUserPointsRepository
     bool UserExists(string tgId);
     (UserPoints, UserPoints, UserPoints) GetTopUsersPoints();
     ulong GetUserPoints(string tgId);
+    ulong GetUserPlaceDuePoints(string tgId);
 }

@@ -51,7 +51,7 @@ public class UserPointsRepository : IUserPointsRepository
 
     public (UserPoints, UserPoints, UserPoints) GetTopUsersPoints()
     {
-        var allUsers = _context.DbPoints.OrderByDescending (u => u.Points).ToList();
+        var allUsers = _context.DbPoints.OrderByDescending(u => u.Points).ToList();
         var topUsers = (allUsers[0], allUsers[1], allUsers[2]);
         Console.WriteLine(allUsers[0].TgId + " " + allUsers[0].Points);
         Console.WriteLine(allUsers[1].TgId + " " + allUsers[1].Points);
@@ -64,5 +64,12 @@ public class UserPointsRepository : IUserPointsRepository
     {
         var user = _context.DbPoints.Single(u => u.TgId == tgId);
         return user.Points;
+    }
+
+    public ulong GetUserPlaceDuePoints(string tgId)
+    {
+        var userPoints = GetUserPoints(tgId);
+        int higherScoresCount = _context.DbPoints.Count(u => u.Points > userPoints);
+        return (ulong)(higherScoresCount + 1);
     }
 }

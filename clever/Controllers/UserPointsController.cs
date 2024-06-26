@@ -52,4 +52,11 @@ public class UserPointsController : ControllerBase
         var response = await _userPointsRepository.RemovePointsFromUser(tgId, fundsAmount);
         return Ok(response);
     }
+
+    [HttpGet("place")]
+    public Task<ActionResult<ulong>> GetUserPlaceDuePoints([FromQuery] string tgId)
+    {
+        var response = _userPointsRepository.GetUserPlaceDuePoints(tgId);
+        return Task.FromResult<ActionResult<ulong>>(Ok(response));
+    }
 }

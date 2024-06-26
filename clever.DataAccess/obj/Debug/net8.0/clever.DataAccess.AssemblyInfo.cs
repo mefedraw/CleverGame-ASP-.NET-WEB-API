@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clever.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b13ffaa084c477f804040ca476acefe3d3537f05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+914d75b39c3adf1a4ce048a287f089e697c8511d")]
 [assembly: System.Reflection.AssemblyProductAttribute("clever.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clever.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
