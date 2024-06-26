@@ -12,4 +12,6 @@ public class AppDbContext: Microsoft.EntityFrameworkCore.DbContext
     public DbSet<UserPoints> DbPoints { get; set; }  
     public DbSet<UserQuests> DbQuests { get; set; }
     
+    public DbSet<TasksInfo> DbTasksInfo { get; set; }
+    
 }
