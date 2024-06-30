@@ -14,4 +14,6 @@ public class AppDbContext: Microsoft.EntityFrameworkCore.DbContext
     
     public DbSet<UserAuth> DbUserAuth { get; set; }
     
+    public DbSet<UserTask> DbUserTask { get; set; }
+    
 }

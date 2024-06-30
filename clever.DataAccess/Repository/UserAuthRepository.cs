@@ -1,7 +1,7 @@
 ﻿using clever.Core.Models;
+using clever.Core.Abstractions;
 
 namespace clever.DataAccess.Repository;
-using clever.Core.Abstractions;
 
 public class UserAuthRepository : IUserAuthRepository
 {

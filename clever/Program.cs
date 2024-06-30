@@ -19,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(
  builder.Services.AddScoped<IUserQuestsRepository, UserQuestsRepository>();
  builder.Services.AddScoped<IUserTasksInfoRepository, UserTasksInfoRepository>();
  builder.Services.AddScoped<IUserAuthRepository, UserAuthRepository>();
+ builder.Services.AddScoped<IUserTaskRepository, UserTaskRepository>();
 
 var app = builder.Build();
 
