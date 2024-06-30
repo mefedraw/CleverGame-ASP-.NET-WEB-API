@@ -28,7 +28,7 @@ public class UserQuestsRepository : IUserQuestsRepository
         }
         else
         {
-            var tempUser = new UserQuests(Guid.NewGuid(), tgId, completedAmount);
+            var tempUser = new UserQuests(tgId, completedAmount);
             await _context.AddAsync(tempUser);
         }
 

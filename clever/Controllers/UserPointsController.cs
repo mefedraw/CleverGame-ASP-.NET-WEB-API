@@ -1,8 +1,8 @@
-﻿namespace clever.Controllers;
-
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using clever.Core.Abstractions;
 using clever.Contracts;
+
+namespace clever.Controllers;
 
 [ApiController]
 [Route("api/v1/points")]
@@ -19,7 +19,7 @@ public class UserPointsController : ControllerBase
     public Task<ActionResult<UserPointsResponse>> GetUserPoints([FromQuery] string tgId)
     {
         var pointsAmount = _userPointsRepository.GetUserPoints(tgId);
-        var response = new UserPointsResponse(tgId, pointsAmount);
+        var response = new UserPointsResponse(pointsAmount);
         return Task.FromResult<ActionResult<UserPointsResponse>>(Ok(response));
     }
 

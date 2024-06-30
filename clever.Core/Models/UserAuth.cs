@@ -3,12 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace clever.Core.Models;
 
-public class UserQuests(string tgId, int completed)
+public class UserAuth(string tgId, string tgUsername, DateOnly authDate)
 {
-    [Key, ForeignKey("UserAuth")]
+    [Key]
     [StringLength(30)]
     public string TgId { get; set; } = tgId;
-    public int Completed { get; set; } = completed;
-    
-    public virtual UserAuth UserAuth { get; set; }
+
+    public string TgUsername { get; set; } = tgUsername;
+
+    public DateOnly AuthDate { get; set; } = authDate;
 }

@@ -23,7 +23,7 @@ public class UserPointsRepository : IUserPointsRepository
         var user = _context.DbPoints.SingleOrDefault(u => u.TgId == tgId);
         if (user == null)
         {
-            var tempUser = new UserPoints(Guid.NewGuid(), tgId, amount);
+            var tempUser = new UserPoints(tgId, amount);
             await _context.DbPoints.AddAsync(tempUser);
             Console.WriteLine("No UserPoints at all, UserPoints were added!");
         }
@@ -53,15 +53,22 @@ public class UserPointsRepository : IUserPointsRepository
     {
         var allUsers = _context.DbPoints.OrderByDescending(u => u.Points).ToList();
         var topUsers = (allUsers[0], allUsers[1], allUsers[2]);
-        Console.WriteLine(allUsers[0].TgId + " " + allUsers[0].Points);
-        Console.WriteLine(allUsers[1].TgId + " " + allUsers[1].Points);
-        Console.WriteLine(allUsers[2].TgId + " " + allUsers[2].Points);
+
+        Console.WriteLine($"top1user: {allUsers[0].TgId}  \" \" points: {allUsers[0].Points}");
+        Console.WriteLine($"top2user: {allUsers[1].TgId}  \" \" points: {allUsers[1].Points}");
+        Console.WriteLine($"top3user: {allUsers[2].TgId}  \" \" points: {allUsers[2].Points}");
         Console.WriteLine("end of repo GetTopUsersPoints logs");
+
         return topUsers;
     }
 
     public ulong GetUserPoints(string tgId)
     {
+        if (_context.DbPoints.Count(u => u.TgId == tgId) == 0)
+        {
+            return 0;
+        }
+
         var user = _context.DbPoints.Single(u => u.TgId == tgId);
         return user.Points;
     }

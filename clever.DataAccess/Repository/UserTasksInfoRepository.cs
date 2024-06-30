@@ -12,14 +12,10 @@ public class UserTasksInfoRepository : IUserTasksInfoRepository
         _context = context;
     }
 
-    public async Task AddTask(short taskId, int profit, string text, TaskType type, ulong workload, string link)
+    public async Task AddTask(int profit, string text, TaskType type, ulong workload, string link)
     {
-        if (_context.DbTasksInfo.Count(u => u.TaskId == taskId) == 0)
-        {
-            var tempTask = new TasksInfo(Guid.NewGuid(), taskId, profit, text, type, workload, link);
-            await _context.DbTasksInfo.AddAsync(tempTask);
-        }
-
+        var tempTask = new TasksInfo(profit, text, type, workload, link);
+        await _context.DbTasksInfo.AddAsync(tempTask);
         await _context.SaveChangesAsync();
     }
 

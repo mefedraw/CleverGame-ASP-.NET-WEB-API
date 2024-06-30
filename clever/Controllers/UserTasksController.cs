@@ -20,7 +20,7 @@ public class UserTasksController : ControllerBase
     public async Task<ActionResult> AddTask([FromQuery] short taskId, [FromQuery] int profit, [FromQuery] string text,
         [FromQuery] TaskType type, [FromQuery] ulong workload, [FromQuery] string link)
     {
-        await _userTasksInfoRepository.AddTask(taskId, profit, text, type, workload, link);
+        await _userTasksInfoRepository.AddTask(profit, text, type, workload, link);
         return Created();
     }
     
@@ -35,7 +35,7 @@ public class UserTasksController : ControllerBase
     public Task<ActionResult<TaskInfoResponse>> GetTaskInfo([FromQuery] short taskId)
     {
         var tempTask = _userTasksInfoRepository.GetTaskInfo(taskId);
-        var response = new TaskInfoResponse(taskId, tempTask.Profit, tempTask.Text, (int)tempTask.Type, tempTask.Workload, tempTask.Link);
+        var response = new TaskInfoResponse(tempTask.Profit, tempTask.Text, tempTask.Type, tempTask.Workload, tempTask.Link);
         // не понятно надо передавать int или TaskType
         return Task.FromResult<ActionResult<TaskInfoResponse>>(Ok(response));
     }

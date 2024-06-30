@@ -1,15 +1,15 @@
-﻿namespace clever.Core.Models;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class UserPoints
+namespace clever.Core.Models;
+
+public class UserPoints(string tgId, ulong points)
 {
-    
-    public UserPoints(Guid id, string tgId, ulong points)
-    {
-        Id = id;
-        TgId = tgId;
-        Points = points;
-    }
-    public Guid Id { get; set; }
-    public string TgId { get; set; }
-    public ulong Points{ get; set; }
+    [Key, ForeignKey("UserAuth")]
+    [StringLength(30)]
+    public string TgId { get; set; } = tgId;
+
+    public ulong Points { get; set; } = points;
+
+    public virtual UserAuth UserAuth { get; set; }
 }

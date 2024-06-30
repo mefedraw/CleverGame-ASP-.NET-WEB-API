@@ -3,10 +3,9 @@
 namespace clever.Contracts;
 
 public record TaskInfoResponse(
-    short TaskId,
     int Profit,
     string Text,
-    int Type,
+    TaskType Type,
     ulong Workload,
     string Link
 );
