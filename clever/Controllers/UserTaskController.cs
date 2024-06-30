@@ -14,7 +14,7 @@ public class UserTaskController : ControllerBase
     {
         _userTaskRepository = userTaskRepository;
     }
-    
+
     [HttpGet("available")]
     public async Task<ActionResult<GetAvailableTaskResponse>> GetAvailableTasks([FromQuery] string tgId)
     {
@@ -27,6 +27,13 @@ public class UserTaskController : ControllerBase
     public async Task<ActionResult> InitTasks([FromQuery] string tgId)
     {
         await _userTaskRepository.InitTasks(tgId);
+        return NoContent();
+    }
+
+    [HttpPatch("mark-as-done")]
+    public async Task<ActionResult> MarkAsDone([FromQuery] string tgId, [FromQuery] short taskId)
+    {
+        await _userTaskRepository.MarkAsDone(tgId, taskId);
         return NoContent();
     }
 }

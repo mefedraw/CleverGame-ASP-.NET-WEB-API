@@ -6,4 +6,6 @@ public interface IUserTaskRepository
     Task<List<TasksInfo>> GetAvailableTasks(string tgId);
 
     Task InitTasks(string tgId);
+
+    Task MarkAsDone(string tgId,short taskId);
 }

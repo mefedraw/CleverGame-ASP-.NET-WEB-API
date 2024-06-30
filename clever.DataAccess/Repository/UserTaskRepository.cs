@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace clever.DataAccess.Repository;
-
+using Microsoft.EntityFrameworkCore;
 using clever.Core.Abstractions;
 using clever.Core.Models;
 
@@ -36,6 +36,15 @@ public class UserTaskRepository : IUserTaskRepository
             await _context.DbUserTask.AddAsync(userTask);
         }
 
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task MarkAsDone(string tgId, short taskId)
+    {
+        var tempTask = _context.DbUserTask
+            .Single(u => u.TgId == tgId && u.TaskId == taskId);
+    
+        tempTask.IsCompleted = true;
         await _context.SaveChangesAsync();
     }
 }
