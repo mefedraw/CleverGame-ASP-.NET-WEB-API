@@ -10,13 +10,15 @@ public class UserAuthController : ControllerBase
     private readonly IUserAuthRepository _userAuthRepository;
     private readonly IUserPointsRepository _userPointsRepository;
     private readonly IUserQuestsRepository _userQuestsRepository;
+    private readonly IUserTaskRepository _userTaskRepository;
 
     public UserAuthController(IUserAuthRepository userAuthRepository, IUserPointsRepository userPointsRepository,
-        IUserQuestsRepository userQuestsRepository)
+        IUserQuestsRepository userQuestsRepository, IUserTaskRepository userTaskRepository)
     {
         _userAuthRepository = userAuthRepository;
         _userPointsRepository = userPointsRepository;
         _userQuestsRepository = userQuestsRepository;
+        _userTaskRepository = userTaskRepository;
     }
 
     [HttpPost("user")]
@@ -39,6 +41,7 @@ public class UserAuthController : ControllerBase
         await _userAuthRepository.AuthUser(tgId, tgUsername);
         await _userPointsRepository.AddPointsToUser(tgId, 0);
         await _userQuestsRepository.IncreaseQuestsNumber(tgId, 0);
+        await _userTaskRepository.InitTasks(tgId);
         return Created();
     }
 }
