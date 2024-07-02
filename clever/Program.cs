@@ -20,6 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(
  builder.Services.AddScoped<IUserTasksInfoRepository, UserTasksInfoRepository>();
  builder.Services.AddScoped<IUserAuthRepository, UserAuthRepository>();
  builder.Services.AddScoped<IUserTaskRepository, UserTaskRepository>();
+ builder.Services.AddScoped<IFriendShipRepository, FriendShipRepository>();
 
 var app = builder.Build();
 

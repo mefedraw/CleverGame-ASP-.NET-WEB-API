@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever.DataAccess", "clever
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever.Core", "clever.Core\clever.Core.csproj", "{C753E6EC-05E3-4544-98FC-BC816FA01E48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clever.Contracts", "clever.Contracts\clever.Contracts.csproj", "{038BE9A9-777D-4B10-A64C-58CF27FF0FDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C753E6EC-05E3-4544-98FC-BC816FA01E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C753E6EC-05E3-4544-98FC-BC816FA01E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C753E6EC-05E3-4544-98FC-BC816FA01E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038BE9A9-777D-4B10-A64C-58CF27FF0FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038BE9A9-777D-4B10-A64C-58CF27FF0FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038BE9A9-777D-4B10-A64C-58CF27FF0FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038BE9A9-777D-4B10-A64C-58CF27FF0FDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

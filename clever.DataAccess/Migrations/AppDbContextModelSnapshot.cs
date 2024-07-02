@@ -22,6 +22,33 @@ namespace clever.DataAccess.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("clever.Core.Models.FriendShip", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("FriendId")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.Property<bool>("FriendRequestAccepted")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateOnly>("FriendsDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DbFriendships");
+                });
+
             modelBuilder.Entity("clever.Core.Models.TasksInfo", b =>
                 {
                     b.Property<short>("TaskId")

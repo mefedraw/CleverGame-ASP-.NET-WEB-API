@@ -1,0 +1,16 @@
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.csproj.AssemblyReference.cache
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.AssemblyInfoInputs.cache
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.AssemblyInfo.cs
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.sourcelink.json
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\bin\Debug\net8.0\clever.Contracts.deps.json
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\bin\Debug\net8.0\clever.Contracts.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\bin\Debug\net8.0\clever.Contracts.pdb
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\bin\Debug\net8.0\clever.Core.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\bin\Debug\net8.0\clever.Core.pdb
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.C.6148CF8E.Up2Date
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\refint\clever.Contracts.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\clever.Contracts.pdb
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever.Contracts\obj\Debug\net8.0\ref\clever.Contracts.dll

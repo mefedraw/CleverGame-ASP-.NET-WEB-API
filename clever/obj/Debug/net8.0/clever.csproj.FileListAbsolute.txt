@@ -108,3 +108,5 @@ C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\obj\Debug\net8.0\refi
 C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\obj\Debug\net8.0\clever.pdb
 C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\obj\Debug\net8.0\clever.genruntimeconfig.cache
 C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\obj\Debug\net8.0\ref\clever.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\bin\Debug\net8.0\clever.Contracts.dll
+C:\Users\fyodo.DESKTOP-9A67S1J\RiderProjects\clever\clever\bin\Debug\net8.0\clever.Contracts.pdb

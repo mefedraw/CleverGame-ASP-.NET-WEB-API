@@ -18,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\clever.Contracts\clever.Contracts.csproj" />
       <ProjectReference Include="..\clever.Core\clever.Core.csproj" />
       <ProjectReference Include="..\clever.DataAccess\clever.DataAccess.csproj" />
     </ItemGroup>

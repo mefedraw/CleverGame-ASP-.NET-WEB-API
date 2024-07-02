@@ -16,4 +16,6 @@ public class AppDbContext: Microsoft.EntityFrameworkCore.DbContext
     
     public DbSet<UserTask> DbUserTask { get; set; }
     
+    public DbSet<FriendShip> DbFriendships { get; set; }
+    
 }
