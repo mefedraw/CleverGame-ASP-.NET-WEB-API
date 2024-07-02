@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clever.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e834995635c70c4e2d1ae654449dedeb18ffe23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6259cf64bab3ea8dbc25869c02791c70509228fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("clever.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clever.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
