@@ -1,4 +1,4 @@
-***Brainz - tg web app на подобие игры clever VK.***
+***Brainz - tg web app наподобие игры clever VK.***
 
 Код для взаимодействия бд и фронтенда.
 
