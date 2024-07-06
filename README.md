@@ -6,7 +6,7 @@
 
 ![image](https://github.com/mefedraw/CleverGame-ASP-.NET-WEP-API/assets/144416623/20d455ad-e500-4244-91c1-c1863678311d)
 
-https://helloworld9999999.github.io/123/idx_main_page фронтед частью занимается https://github.com/helloworld9999999
+https://helloworld9999999.github.io/123/idx_main_page фронтенд частью занимается https://github.com/helloworld9999999
 
 
 ## Описание таблиц базы данных
